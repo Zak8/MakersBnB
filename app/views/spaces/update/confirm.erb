@@ -1,0 +1,21 @@
+<div class="container page_box">
+  <h2 align="center">Update Listing Confirmation</h2>
+  <h4 align="center">The details of your listing have been changed as follows:</h4>
+  <div style="width: 31%;float:left;margin-left: 15%;padding: 10px;" display="inline-block" class="content_box">
+    <p><center>Old Details:</center></p>
+    Name: <%= @space_name_old %><br>
+    Description: <%= @space_description_old %><br>
+    Price per night: £<%= format_price(@space_price_per_night_old) %><br>
+    Available From: <%= format_date(@space_available_from_old.to_s) %><br>
+    Available To: <%= format_date(@space_available_to_old.to_s) %><br>
+  </div>
+
+  <div style="width: 31%;float:right; margin-right: 15%;padding: 10px;" display="inline-block" class="content_box">
+    <p><center>New Details:</center></p>
+    Name: <%= @space_name_new %><br>
+    Description: <%= @space_description_new %><br>
+    Price per Night: £<%= format_price(@space_price_per_night_new) %><br>
+    Available From: <%= format_date(@space_available_from_new.to_s) %><br>
+    Available To: <%= format_date(@space_available_to_new.to_s) %><br>
+  </div>
+</div>
